@@ -20,8 +20,8 @@ class AnuncioController extends Controller
     public function store(Request $request){
         
         $AnuncioData = $request->all(); 
-        $user = auth()->user()->id; 
-        $AnuncioData['id_usuario'] = $user;
+       // $user = auth()->user()->id; 
+        //$AnuncioData['id_usuario'] = $user;
         
             
         $anuncio = Anuncio::create($AnuncioData);

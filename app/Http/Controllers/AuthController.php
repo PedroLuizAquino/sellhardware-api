@@ -31,7 +31,7 @@ class AuthController extends Controller
 
         
     }else{
-        return response()->json(['response' => true]);
+        return response()->json(['response' => $user->id]);
     }
     
     return response()->json(['fail' => false]);
